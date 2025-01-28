@@ -7,8 +7,7 @@
 </head>
 <body>
     <div class="container">
-		  <div class="intro"> <h1>Diabetes Risk Prediction</h1>
-<p>This web app uses a custom Neural Network Pytorch model to predict the risk of diabetes based on patient data, trained on a Kaggle dataset.</p>  </div>
+		  <div class="intro"> <h1>Diabetes Risk Prediction</h1>  </div>
         <form action="/" method="post">
             <div class="form-group">
                 <label for="pregnancies">Pregnancies:</label>
@@ -36,15 +35,10 @@
             </div>
             <button type="submit" class="btn">Predict</button>
         </form>
-        {% if result %}
         <div class="result">
             <p>{{ result }}</p>
         </div>
-        {% endif %}
     </div>
-	<footer class="footer">
-            <p>Created by Kristian Alikaj. For more visit <a href="https://github.com/kris96tian">GitHub profile</a>.</p>
-          </footer>
 </body>
 	<style>
 body {
